@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <title>Number Game</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>The Number Game</h1>
+
+        <div class="select-numbers">
+            <input type="number" name="select-min" id="select-min" placeholder="select min number" min="1" max="19">
+            <input type="number" name="select-max" id="select-max" placeholder="select max number" min="2" max="20">
+            <input type="submit" value="submit" id="submit" class="submit-selection">
+
+        </div>
+
+        <p class="instruction"></p>
+
+        <input type="number" name="number" placeholder="Enter your number" id="guess-number">
+        <input type="submit" value="guess" id="guess-btn">
+
+        <p class="message"></p>
+
+        <button id="restart">Restart</button>
+
+    </div>
+    
+
+    
+    <script src="app.js"></script>
+    
+</body>
+</html>
