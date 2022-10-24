@@ -15,26 +15,41 @@
             <h1>The Number Game</h1>
 
         </div>
-       
-        <div class="select-numbers">
-            <input type="number" class="select" name="select-min" id="select-min" placeholder=" min number" min="1" max="19">
-            <input type="number" class="select" name="select-max" id="select-max" placeholder="max number" min="2" max="20">
-            <input type="submit" value="submit" id="submit" class="submit-selection">
+
+        <div class="main-container">
+            <div class="guessing-options_container">
+                <div class="select-numbers">
+                    <input type="number" class="select" name="select-min" id="select-min" placeholder=" min number" min="1" max="19">
+                    <input type="number" class="select" name="select-max" id="select-max" placeholder="max number" min="2" max="20">
+                    <input type="submit" value="submit" id="submit" class="submit-selection">
+        
+                </div>
+        
+                <p class="instruction"></p>
+        
+                <input type="number" name="number" placeholder="Enter your number" id="guess-number">
+                <input type="submit" value="guess" id="guess-btn">
+        
+                <p class="message"></p>
+        
+                <button id="restart">Restart</button>
+            </div>
+    
+            <div class="sad-icon_container">
+                <div class="sad-icon"></div>
+            </div>
 
         </div>
-
-        <p class="instruction"></p>
-
-        <input type="number" name="number" placeholder="Enter your number" id="guess-number">
-        <input type="submit" value="guess" id="guess-btn">
-
-        <p class="message"></p>
-
-        <button id="restart">Restart</button>
-
+       
     </div>
+
+  
     
 
+    <script>
+        let bleep = new Audio();
+        bleep.src = './assets/donkey noise.mp3';
+    </script>
     
     <script src="app.js"></script>
     
