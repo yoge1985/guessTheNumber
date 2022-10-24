@@ -21,6 +21,14 @@ body {
 
 }
 
+@media (max-width: 1100px) {
+    .container {
+        margin-top: 4rem;
+        
+        
+    }
+}
+
 .header_container {
     margin-bottom: 3rem;
     padding: 1rem;
@@ -31,12 +39,26 @@ body {
     display: flex;
 }
 
+@media (max-width: 1000px) {
+    .main-container {
+        flex-direction: column-reverse;
+        
+    }
+}
+
 .guessing-options_container {
     display: flex;
     flex-direction: column;
     margin-left: 20rem;
     justify-content: center;
     align-items: center;
+}
+
+@media (max-width: 1100px) {
+    .guessing-options_container {
+        margin-left: 0%;
+        
+    }
 }
 
 h1 {
@@ -94,5 +116,33 @@ button:hover {
     width: 20rem;
     height: 10rem;
     /* background-color: aqua; */
+}
+
+
+
+input::placeholder {
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+    .select-numbers {
+        display: flex;
+        flex-direction: column;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    #submit {
+        margin-top: 5px;
+        
+    }
+}
+
+@media (max-width: 1000px) {
+    .container {
+        width: 80%;
+        
+    }
 }
 
